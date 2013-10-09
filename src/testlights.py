@@ -4,13 +4,13 @@ from random import randint, random
 import pifacecommon
 import pifacedigitalio
 
-DELAY = 0.05  # seconds
+DELAY = 1  # seconds
 
 try:
     pifacedigitalio.init()
     pifacedigital = pifacedigitalio.PiFaceDigital()
     while True:
-        pifacedigital.leds[randint(2, 7)].toggle()
+        pifacedigital.leds[randint(0,2)].toggle()
         sleep(DELAY)    
         
 except (KeyboardInterrupt):
