@@ -17,6 +17,7 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Compile Include="src\buildmonitor.py" />
     <Compile Include="src\init.py" />
     <Compile Include="src\press.py" />
     <Compile Include="src\testlights.py" />
